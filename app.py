@@ -21,7 +21,7 @@ dataset_scaled = sc.fit_transform(dataset_X)
 
 @app.route('/',methods=['GET','POST'])
 def first():
-    return render_template('homepage.html')
+    return render_template('index.html')
 
 
 @app.route('/home',methods=['GET','POST'])
