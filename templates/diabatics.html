@@ -1,0 +1,47 @@
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>Diabetes Predictor</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+  <style>
+body {background-color:DarkKhaki;}
+h1   {color:SlateBlue;font-family: verdana;}
+h2    {color: Red;font-family: courier;font-size: 30px;}
+p     {color:Black;font-family: "Times New Roman", Times, serif;font-size: 30px;}
+</style>
+</head>
+
+<body>
+ <div class="login">
+	<h1>Diabetes Predictor</h1>
+<p>Diabetes is a chronic disease that occurs either when the pancreas does not produce enough insulin or when the body cannot effectively use the insulin it produces. Insulin is a hormone that regulates blood sugar. Hyperglycaemia, or raised blood sugar, is a common effect of uncontrolled diabetes and over time leads to serious damage to many of the body's systems, especially the nerves and blood vessels<br>
+Type 1 diabetes<br>
+Type 1 diabetes (previously known as insulin-dependent, juvenile or childhood-onset) is characterized by deficient insulin production and requires daily administration of insulin. In 2017 there were 9 million people with type 1 diabetes; the majority of them live in high-income countries.<br>
+Type 2 diabetes<br>
+Type 2 diabetes (formerly called non-insulin-dependent, or adult-onset) results from the body’s ineffective use of insulin. More than 95% of people with diabetes have type 2 diabetes. This type of diabetes is largely the result of excess body weight and physical inactivity.</p>
+
+     
+    <form action="{{ url_for('predict')}}"method="post">
+        <input type="text" name="Glucose Level" placeholder="Glucose Level" required="required" />
+    	<input type="text" name="Insulin" placeholder="Insulin" required="required" />
+        <input type="text" name="BMI" placeholder="BMI" required="required" />
+        <input type="text" name="Age" placeholder="Age" required="required" />
+		
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict1</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>

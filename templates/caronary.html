@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coronary Prediction</title>
+<style>
+body {background-color:LightGray;}
+h1   {color:SlateBlue;font-family: verdana;}
+h2    {color: Tomato;font-family: courier;font-size: 30px;}
+p     {color:Black;font-family: "Times New Roman", Times, serif;font-size: 20px;}
+</style>
+</head>
+<body style="display:flex; flex-direction:column; align-items:center; justify-content:center;">
+    <h1>Coronary Prediction</h1>
+    <br>
+<p>Coronary artery disease is a narrowing or blockage of your coronary arteries usually caused by the buildup of fatty material called plaque. Coronary artery disease is also called coronary heart disease, ischemic heart disease and heart disease.Coronary arteries are the blood vessels that supply oxygen-rich blood to your heart muscle to keep it pumping. The coronary arteries are directly on top of your heart muscle.<br>
+You have four main coronary arteries:<br>
+1.The right coronary artery<br>
+2.The left coronary artery<br>
+3.The left anterior descending artery<br>
+4.The left circumflex artery</p>
+    <form action="/results" method="post">
+        <h2>Enter Age</h2>
+        <input type="text" name="age">
+        <br><br>
+        <h2> Enter total cholesterol level</h2>
+        <input type="text" name="tchol">
+        <br><br>
+        <h2>Enter Systolic blood pressure</h2>
+        <input type="text" name="sysbp">
+        <br><br>
+        <h2>Enter diastolic blood pressure</h2>
+        <input type="text" name="diabp">
+        <br><br>
+        <h2>Enter body mass index</h2>
+        <input type="text" name="bmi">
+        <br><br>
+        <h2>Enter heart rate</h2>
+        <input type="text" name="hrate">
+        <br><br>
+        <h2>Enter glucose level</h2>
+        <input type="text" name="glucose">
+        <br><br>
+        <input type="submit" value="predict">
+    </form>
+    <br>
+
+    <h1>Prediction : {{result}}</h1>
+</body>
+</body>
+</html>

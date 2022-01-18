@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calories Prediction</title>
+<style>
+body {background-color:LightGray;}
+h1   {color:SlateBlue;font-family: verdana;}
+h2    {color: Tomato;font-family: courier;font-size: 30px;}
+p     {color:Black;font-family: "Times New Roman", Times, serif;font-size: 20px;}
+</style>
+</head>
+<body style="display:flex; flex-direction:column; align-items:center; justify-content:center;">
+    <h1>Calories Prediction</h1>
+    <br>
+    <form action="/predict2" method="post">
+        <h2>Enter Gender 0 for male and 1 for female</h2>
+        <input type="text" name="gen1">
+        <br><br>
+        <h2> Enter age</h2>
+        <input type="text" name="age1">
+        <br><br>
+        <h2>Enter height</h2>
+        <input type="text" name="hei1">
+        <br><br>
+        <h2>Enter weight</h2>
+        <input type="text" name="wei1">
+        <br><br>
+        <h2>Enter duration</h2>
+        <input type="text" name="dur1">
+        <br><br>
+        <h2>Enter heart rate</h2>
+        <input type="text" name="hra1">
+        <br><br>
+        <h2>Enter temperature</h2>
+        <input type="text" name="temp1">
+        <br><br>
+        <input type="submit" value="predict2">
+    </form>
+    <br>
+
+    <h1>Prediction : {{result}}</h1>
+</body>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid  Classifier</title>
+<style>
+body {background-color: powderblue;}
+h1   {color: blue;font-family: verdana;}
+h2    {color: red;font-family: courier;font-size: 30px;}
+p     {color:Navy;font-family: "Times New Roman", Times, serif;font-size: 20px;}
+</style>
+</head>
+<body style="display:flex; flex-direction:column; align-items:center; justify-content:center;">
+    <h1>Covid  Classifier</h1>
+    <br>
+    <p>The new type of Coronavirus (2019-nCov) epidemic spread rapidly, causing more than 250 thousand deaths worldwide. The virus, which first appeared as a sign of pneumonia, was later called the SARS-COV-2 with Severe Acute Respiratory Syndrome by the World Health Organization. The SARS-COV-2 virus is triggered by binding to the Angiotensin-Converting Enzyme 2 (ACE 2) inhibitor, which is vital in cardiovascular diseases and the immune system, especially in conditions such as cerebrovascular, hypertension, and diabetes. This study aims to evaluate the prediction performance of death status based on the demographic/clinical factors (including COVID-19 severity) by data mining methods.</p>
+    <br>
+    <form action="/predict" method="post">
+        <h2>covidseverity i.e 0-low or 1 -medium or 2-high</h2>
+        <input type="text" name="sepal_length">
+        <br><br>
+        <h2>verysevere symptoms i.e 0-low,1-high </h2>
+        <input type="text" name="sepal_width">
+        <br>
+        <br>
+        <input type="submit" value="Predict">
+    </form>
+    <br>
+
+    <h1>Prediction : {{result}}</h1>
+</body>
+</body>
+</html>
