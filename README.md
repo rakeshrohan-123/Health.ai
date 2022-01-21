@@ -1,5 +1,6 @@
 # Health.ai
-![image](https://user-images.githubusercontent.com/66308480/149965441-4117fbd1-b9be-477f-acf6-1c12a9966094.png)
+![image](https://user-images.githubusercontent.com/66308480/150521759-68cba255-90b3-4933-836d-47e6ce102dc0.png)
+
 ![image](https://user-images.githubusercontent.com/66308480/149965635-a498fa35-2209-405b-9242-adaf1d067df3.png)
 output for diabetes 
 ![image](https://user-images.githubusercontent.com/66308480/149965815-a8490348-1a99-427d-9691-98d8641978da.png)
